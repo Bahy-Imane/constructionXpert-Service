@@ -49,7 +49,6 @@ public class AuthService {
     }
 
 
-
     public String signUp(SignUpDto signUpDto) {
 
         User user = new User();
