@@ -35,7 +35,7 @@ public class AuthService {
 
         String token = jwtTokenProvider.generateToken(authentication);
         System.out.println("token"+token);
-        User user = userRepository.findByUserNameOrEmail(loginDto.getUserNameOrEmail(), loginDto.getUserNameOrEmail());
+        User user = userRepository.findByUsernameOrEmail(loginDto.getUserNameOrEmail(), loginDto.getUserNameOrEmail());
         System.out.println("user"+user);
 
         JwtAuthResponse response = new JwtAuthResponse();
@@ -51,7 +51,6 @@ public class AuthService {
 
 
     public String signUp(SignUpDto signUpDto) {
-//        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
         User user = new User();
         user.setUserName(signUpDto.getUserName());
