@@ -1,4 +1,4 @@
-package com.user.service;
+package com.user.manager.jwt;
 
 import com.user.manager.enums.Role;
 import io.jsonwebtoken.Claims;
