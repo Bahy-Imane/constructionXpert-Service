@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: API-GATEWAY-SERVICE
+  main:
+    web-application-type: reactive
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+app:
+  jwt-secret: fghskjdx35cxc68c9WNC4567TF3456CGHHVTD34IFDWS
